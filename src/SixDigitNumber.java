@@ -25,11 +25,8 @@ public class SixDigitNumber {
 
     public void check_currentNumber() {
         Matcher matcher = pattern.matcher(this.currentNumber);
-        if (matcher.matches()) {
-            this.checked = true;
-            return;
-        }
-        this.checked = false;
+
+        this.checked = matcher.matches();
     }
 
     public static void add_to_numbers(SixDigitNumber sdn) {
